@@ -5,7 +5,7 @@ require 'git'
 
 class AppVersion
   def initialize path
-    path = File.expand_path(File.join(File.dirname(path),".."))
+    path = File.expand_path(File.dirname(path))
     @git = Git.open(path)
   end
   
