@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "app-version-git"
   gem.homepage = "http://github.com/ondrejbartas/app-version-git"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Version number for application based on git commits}
+  gem.description = %Q{Show version number based on git commit counts and enable to show change log from commit messages}
   gem.email = "ondrej@bartas.cz"
   gem.authors = ["Ondrej Bartas"]
   # dependencies defined in Gemfile
