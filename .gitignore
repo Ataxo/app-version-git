@@ -5,6 +5,7 @@
 coverage
 coverage.data
 
+Gemfile.lock
 # rdoc generated
 rdoc
 
