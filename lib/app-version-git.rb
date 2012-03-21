@@ -10,15 +10,15 @@ class AppVersion
   end
   
   def version
-    log_count = @git.log.size
+    log_count = @git.log(99999).size
     patch = log_count % 10
     minor = log_count/10 % 10
     major = log_count/100 % 10
     "#{major}.#{minor}.#{patch}"
   end
   
-  def changelog
-    @git.log.collect{|l|
+  def changelog count = 40
+    @git.log(count).collect{|l|
         { :date => l.date, :author => l.committer.name, :message => l.message  }
       }
   end
