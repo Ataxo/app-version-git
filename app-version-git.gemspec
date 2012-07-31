@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "app-version-git"
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ondrej Bartas"]
-  s.date = "2012-03-21"
+  s.date = "2012-07-31"
   s.description = "Show version number based on git commit counts and enable to show change log from commit messages"
   s.email = "ondrej@bartas.cz"
   s.extra_rdoc_files = [
