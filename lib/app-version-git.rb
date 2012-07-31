@@ -31,7 +31,7 @@ class AppVersion
   
   def changelog count = 40
     @git.log(count).collect{|l|
-        { :date => l.date, :author => l.committer.name, :message => l.message  }
+        { :sha => l.sha, :date => l.date, :author => l.committer.name, :message => l.message  }
       }
   end
   
